@@ -1,0 +1,395 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MAINGUI = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local TextLabel = Instance.new("TextLabel")
+local ChooseTarget = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Warning = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ChooseFrame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel_3 = Instance.new("TextLabel")
+local Finish = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+MAINGUI.Name = "MAINGUI"
+MAINGUI.Parent = game:FindFirstChild("CoreGui")
+MAINGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MAINGUI.DisplayOrder = 2147483647
+MAINGUI.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = MAINGUI
+MainFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.250714272, 0, 0.284289271, 0)
+MainFrame.Size = UDim2.new(0.252857149, 0, 0.034912698, 0)
+
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.000698283548, 0, 0.74832195, 0)
+Frame.Size = UDim2.new(1.00069833, 0, 18.7188835, 0)
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Frame
+
+UIListLayout.Parent = Frame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 11.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0.841918051, 0, 0.0500186309, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Selected User: None"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ChooseTarget.Name = "ChooseTarget"
+ChooseTarget.Parent = TextLabel
+ChooseTarget.BackgroundColor3 = Color3.fromRGB(255, 142, 43)
+ChooseTarget.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChooseTarget.BorderSizePixel = 0
+ChooseTarget.Position = UDim2.new(1, 0, -3.49222159e-06, 0)
+ChooseTarget.Size = UDim2.new(0.187092915, 0, 0.86275804, 0)
+ChooseTarget.Font = Enum.Font.Unknown
+ChooseTarget.Text = "Set User"
+ChooseTarget.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChooseTarget.TextScaled = true
+ChooseTarget.TextSize = 14.000
+ChooseTarget.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = ChooseTarget
+
+Warning.Name = "Warning"
+Warning.Parent = TextLabel
+Warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning.BackgroundTransparency = 11.000
+Warning.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Warning.BorderSizePixel = 0
+Warning.Position = UDim2.new(0.918701231, 0, 5.82036932e-07, 0)
+Warning.Size = UDim2.new(0.0812987909, 0, 0.862754524, 0)
+Warning.Image = "rbxassetid://7249251729"
+
+UICorner_3.Parent = MainFrame
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 11.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0847457647, 0, -1.6348713e-06, 0)
+TextLabel_2.Size = UDim2.new(0.872881353, 0, 0.748320758, 0)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "KILLSTREAK ENDER V1"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel.Parent = MainFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 11.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 5.44957061e-07, 0)
+ImageLabel.Size = UDim2.new(0.0677966326, 0, 0.748320103, 0)
+ImageLabel.Image = "rbxassetid://12024191412"
+
+TextButton.Parent = MainFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 142, 43)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.841807723, 0, -0.0357132182, 0)
+TextButton.Size = UDim2.new(0.157627121, 0, 0.784035206, 0)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "CLOSE"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = TextButton
+
+ChooseFrame.Name = "ChooseFrame"
+ChooseFrame.Parent = MAINGUI
+ChooseFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ChooseFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChooseFrame.BorderSizePixel = 0
+ChooseFrame.Position = UDim2.new(0.373571426, 0, 0.249376565, 0)
+ChooseFrame.Size = UDim2.new(0.252857149, 0, 0.034912698, 0)
+ChooseFrame.Visible = false
+
+Frame_2.Parent = ChooseFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.000698283548, 0, 0.74832201, 0)
+Frame_2.Size = UDim2.new(1.00069833, 0, 4.25458908, 0)
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Frame_2
+
+UIListLayout_2.Parent = Frame_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 30)
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 11.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0.999434769, 0, 0.293836087, 0)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "Click On You're Target."
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 11.000
+TextLabel_3.TextStrokeTransparency = 0.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Finish.Name = "Finish"
+Finish.Parent = Frame_2
+Finish.BackgroundColor3 = Color3.fromRGB(103, 255, 80)
+Finish.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Finish.BorderSizePixel = 0
+Finish.Position = UDim2.new(-1.72295373e-07, 0, 0.545665026, 0)
+Finish.Size = UDim2.new(0.99999994, 0, 0.221616969, 0)
+Finish.Visible = false
+Finish.Font = Enum.Font.Unknown
+Finish.Text = "FINISH"
+Finish.TextColor3 = Color3.fromRGB(255, 255, 255)
+Finish.TextScaled = true
+Finish.TextSize = 14.000
+Finish.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = Finish
+
+UICorner_7.Parent = ChooseFrame
+
+TextLabel_4.Parent = ChooseFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 11.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.124293782, 0, -0.0357159413, 0)
+TextLabel_4.Size = UDim2.new(0.872881353, 0, 0.748320758, 0)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "CHOOSE TARGET"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeTransparency = 0.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_2.Parent = ChooseFrame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 11.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0, 0, 5.44957061e-07, 0)
+ImageLabel_2.Size = UDim2.new(0.0677966326, 0, 0.748320103, 0)
+ImageLabel_2.Image = "rbxassetid://12024191412"
+
+TextButton_2.Parent = ChooseFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 142, 43)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.841807723, 0, -0.0357132182, 0)
+TextButton_2.Size = UDim2.new(0.157627121, 0, 0.784035206, 0)
+TextButton_2.Font = Enum.Font.Unknown
+TextButton_2.Text = "CLOSE"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = TextButton_2
+
+-- Scripts:
+
+local function FPXCDF_fake_script() -- ChooseTarget.LocalScript 
+	local script = Instance.new('LocalScript', ChooseTarget)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.ChooseFrame.Visible = true
+	end)
+end
+coroutine.wrap(FPXCDF_fake_script)()
+local function VZQQVY_fake_script() -- TextLabel.TargetVisualManager 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	while task.wait() do
+		if script.Parent.Parent.Parent.Parent.TargetPlayer.Value == nil then
+			script.Parent.Text = "Selected User: None"
+			script.Parent.ChooseTarget.Visible = true
+			script.Parent.Warning = true
+		else
+			script.Parent.Text = "Selected User: "..script.Parent.Parent.Parent.Parent.TargetPlayer.Value.Name
+			script.Parent.ChooseTarget.Visible = true
+			script.Parent.Warning = false
+		end
+	end
+end
+coroutine.wrap(VZQQVY_fake_script)()
+local function FNWHSPW_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.Parent.Parent:Destroy()
+end
+coroutine.wrap(FNWHSPW_fake_script)()
+local function ZFXJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.Parent.Visible = false
+end
+coroutine.wrap(ZFXJ_fake_script)()
+local function OTMEQY_fake_script() -- ChooseFrame.Chooser 
+	local script = Instance.new('LocalScript', ChooseFrame)
+
+	local MouseTarget = game.Players.LocalPlayer:GetMouse().Target
+	local HasSelectedUser = false
+	local SelectedUser = script.Parent.Parent.SelectedPlayer
+	local TargetUser = script.Parent.Parent.TargetPlayer
+	local FinishButtonPressed = false
+	game.Players.LocalPlayer:GetMouse().Button1Down:Connect(function()
+		if script.Parent.Visible == true then
+		if game:FindFirstChild("CoreGui").SELECTIONBOX.Adornee.Parent:FindFirstChild("Humanoid") and game:FindFirstChild("CoreGui").SELECTIONBOX.Adornee.Parent:IsA("Model") then
+		HasSelectedUser = true
+			SelectedUser = game.Players:GetPlayerFromCharacter(game:FindFirstChild("CoreGui").SELECTIONBOX.Adornee.Parent)
+			end
+			end
+	end)
+	
+	script.Parent.Frame.Finish.MouseButton1Click:Connect(function()
+		FinishButtonPressed = true
+		TargetUser = SelectedUser
+		wait()
+		script.Parent.Visible = false
+	end)
+	
+	while task.wait() do
+		if script.Parent.Visible == true then
+		if HasSelectedUser == true then
+			script.Parent.Frame.Finish.Visible = true
+			else
+				SelectedUser = nil
+			script.Parent.Frame.Finish.Visible = false
+	if MouseTarget ~= nil and MouseTarget.Parent:FindFirstChildOfClass("Humanoid") then
+		game:FindFirstChild("CoreGui").SELECTIONBOX.Adornee = MouseTarget.Parent
+			end
+			end
+		else
+			if HasSelectedUser == true then
+				if FinishButtonPressed == true then
+					
+				end
+			else
+				if FinishButtonPressed == false then
+				SelectedUser = nil
+				game:FindFirstChild("CoreGui").SELECTIONBOX.Adornee = nil
+				end
+			end
+			end
+	end
+end
+coroutine.wrap(OTMEQY_fake_script)()
+local function JKRMR_fake_script() -- MAINGUI.MainValueRunner 
+	local script = Instance.new('LocalScript', MAINGUI)
+
+	local SB = Instance.new("SelectionBox",game:FindFirstChild("CoreGui"))
+	SB.Name = "SELECTIONBOX"
+	SB.LineThickness = 0.005
+	SB.Transparency = 0.25
+	local TP = Instance.new("ObjectValue",script.Parent)
+	TP.Name = "TargetPlayer"
+	local SP = Instance.new("ObjectValue",script.Parent)
+	SP.Name = "SelectedPlayer"
+	
+	--Errors Beyond This Line Are Being Stupid
+	while task.wait(0.5) do 
+	
+		
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(255, 0, 0)}):Play() 
+		wait(0.5)
+	
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(255, 155, 0)}):Play() 
+		wait(0.5)
+	
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(255, 255, 0)}):Play() 
+		wait(0.5)
+	
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(0, 255, 0)}):Play() 
+		wait(0.5)
+	
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(0, 255, 255)}):Play() 
+		wait(0.5)
+	
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(0, 155, 255)}):Play() 
+		wait(0.5)
+	
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(255, 0, 255)}):Play() 
+		wait(0.5)
+	
+		game:GetService('TweenService'):Create(
+		SB,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+		{Color3 = Color3.fromRGB(255, 0, 155)}):Play() 
+		wait(0.5)
+	
+	
+	end 
+	--Errors Up This Line Are Being Stupid
+	
+end
+coroutine.wrap(JKRMR_fake_script)()
