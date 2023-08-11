@@ -243,6 +243,15 @@ TextButton_2.TextWrapped = true
 UICorner_8.CornerRadius = UDim.new(0, 4)
 UICorner_8.Parent = TextButton_2
 
+local SB = Instance.new("SelectionBox",game:FindFirstChild("CoreGui"))
+SB.Name = "SELECTIONBOX"
+SB.LineThickness = 0.005
+SB.Transparency = 0.25
+local TP = Instance.new("ObjectValue",MAINGUI)
+TP.Name = "TargetPlayer"
+local SP = Instance.new("ObjectValue",MAINGUI)
+SP.Name = "SelectedPlayer"
+
 -- Scripts:
 
 local function FPXCDF_fake_script() -- ChooseTarget.LocalScript 
@@ -334,14 +343,7 @@ coroutine.wrap(OTMEQY_fake_script)()
 local function JKRMR_fake_script() -- MAINGUI.MainValueRunner 
 	local script = Instance.new('LocalScript', MAINGUI)
 
-	local SB = Instance.new("SelectionBox",game:FindFirstChild("CoreGui"))
-	SB.Name = "SELECTIONBOX"
-	SB.LineThickness = 0.005
-	SB.Transparency = 0.25
-	local TP = Instance.new("ObjectValue",script.Parent)
-	TP.Name = "TargetPlayer"
-	local SP = Instance.new("ObjectValue",script.Parent)
-	SP.Name = "SelectedPlayer"
+
 	
 	--Errors Beyond This Line Are Being Stupid
 	while task.wait(0.5) do 
